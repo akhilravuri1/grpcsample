@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package scm.calculator;
+option go_package = "github.com/akhilravuri1/caluclator/generated;generated";
+
+message SumRequest {
+    string first_number = 1;
+    string second_number = 2;
+}
+
+message SumResponse {
+    repeated string sum_result = 1;
+}
+
+service CalculatorService {
+    rpc Sum(SumRequest) returns (SumResponse);
+}
