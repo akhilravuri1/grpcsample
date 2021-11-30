@@ -1,4 +1,4 @@
-module calculator-grpc
+module github.com/akhilravuri1/grpcsample
 
 go 1.17
 
