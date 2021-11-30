@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package scm.calculator;
-option go_package = "github.com/akhilravuri1/caluclator/generated;generated";
+option go_package = "github.com/akhilravuri1/grpcsample/generated;generated";
 
 message SumRequest {
     string first_number = 1;
