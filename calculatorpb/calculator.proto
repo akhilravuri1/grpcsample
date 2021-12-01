@@ -8,8 +8,16 @@ message SumRequest {
     string second_number = 2;
 }
 
+message Seller {
+    string Application_no =1;
+    string Email = 2;
+    string Name = 3;
+    string Status = 4;
+    string Sam_id = 5;
+}
+
 message SumResponse {
-    repeated string sum_result = 1;
+    repeated Seller sum_result = 1;
 }
 
 service CalculatorService {

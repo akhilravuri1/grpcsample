@@ -35,5 +35,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("could not greet: %v", err)
 	}
-	log.Printf("Greeting: %s", r.GetSumResult())
+	for i, res := range r.GetSumResult() {
+		log.Printf("%d : %s", i, res)
+	}
 }
